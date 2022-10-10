@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+       <title>Usuário</title>
+    </head>
+
+    <body>
+        <div class="text-center">
+            <h1>Cadastro de Usuário</h1>
+        </div>
+<form id="usuario-form">
+    <div class="nb-3">
+        <label class="form-label">Nome do usuário:</label>
+        <input type="text" class="form-control" id="nomeUsuario" name="nomeUsuario" placeholder="Nome do usuário:" required />
+    </div>
+    <div class="nb-3">
+        <label class="form-label">Data de nascimento:</label>
+        <input type="text" class="form-control" id="dataNascimento" name="dataNascimento" placeholder="Data de nascimento:" required />
+    </div>
+    <div class="nb-3">
+        <label class="form-label">CPF:</label>
+        <input type="text" class="form-control" id="cpf" name="cpf" placeholder="CPF:" required />
+    </div>
+    <div class="nb-3">
+        <label class="form-label">E-mail:</label>
+        <input type="email" class="form-control" id=""email" name="email" placeholder="E-mail:" required />
+    </div>
+    <button type="submit" onclick="msg"() class="btn btn-lg btn-primary m-2 d-grid gap-2 col-4 mx-auto">Enviar</button>
+</form>
+
+<h3>Lista de Usuários</h3>
+<table class="table table-striped" id="table-usuarios" style="width:100%">
+    <thead>
+        <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Nome</th>
+            <th scope="col">Data de Nascimento</th>
+                <th scope="col">CPF</th>
+                <th scope="col">E-mail</th>
+        </tr>
+    </thead>
+    <tbody id="usuarioDados"></tbody>
+</table>
+<script src="js/usuario.js"></script>
+    </body>
+</html>
