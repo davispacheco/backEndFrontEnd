@@ -31,9 +31,35 @@
         </ul>
       </div>
     </div>
-  </nav>    
-<div class="text-center">
-    <h1>Usuário Get Put</h1>
+  </nav>
+  <div class="text-center">
+  <h1>Encontre usuário pelo ID</h1>
 </div>
+  <form id="pesquisaUsuario">
+   <div class="form-group font-weight-bold">
+       <div class="mb-3">
+           <h3>Coloque o Id do usuário para consultar</h3>
+           <input type="text" class="form-control" id="idUsuario" placeholder="Insira o Id" required />
+       </div>
+       <div class="mb-3">
+           <label class="form-label">Nome Usuário</label>
+           <input type="text"  class="form-control" id="nomeUsuario" placeholder="Nome do usuário" />
+       </div>
+           <label class="form-label">Data de nascimento</label>
+           <input type="text" class="form-control" id="dataNascimento" placeholder="Data de nascimento" />
+       </div>
+       <div class="mb-3">
+           <label class="form-label">CPF</label>
+         <input type="text"  class="form-control" id="cpf" placeholder="Coloque seu CPF" />
+       </div>
+       <div>
+           <label class="form-label">Email</label>
+           <input type="text" class="form-control" id="email" placeholder="Insira seu e-mail" />
+       </div>
+     </div>
+     <button type="submit" id="btnDelete" class="btn btn-primary">Deletar Usuário</button>
+  </form>
+
+   <script src="js/usuarioGetPut.js" ></script>
     </body>
 </html>
