@@ -30,7 +30,7 @@ public class UsuarioController {
     }
 
     @CrossOrigin(origins = "*")
-    @GetMapping(path = "/{id}")
+    @GetMapping(path = "/pesquisaid/{id}")
     public ResponseEntity<Optional<UsuarioModel>> buscaPorId (@PathVariable Long id) {
         return ResponseEntity.ok().body(usuarioRepository.findById(id)) ;
     }
